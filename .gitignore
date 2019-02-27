@@ -42,6 +42,7 @@ xcuserdata
 
 # == VSCode
 *.code-workspace
+*/.vscode
 
 # == Visual Studio
 *.sdf
