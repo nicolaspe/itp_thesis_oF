@@ -6,9 +6,9 @@ void ofApp::setup(){
     ofSetVerticalSync(true);
     ofEnableAlphaBlending();
 
-    shader.load("shaders/shader.vert", "shaders/09_grid.frag");
+    // shader.load("shaders/shader.vert", "shaders/09_grid.frag");
     // shader.load("shaders/shader.vert", "shaders/07_varied.frag");
-    // shader.load("shaders/shader.vert", "shaders/07_morefunctions.frag");
+    shader.load("shaders/shader.vert", "shaders/07_morefunctions.frag");
     nowTex.allocate(640, 480, GL_RGBA);
     fbo.allocate(640, 480);
 

@@ -17,7 +17,7 @@ float circle(in vec2 _st, in float _rad) {
 void main() {
     vec2 st = gl_FragCoord.xy / u_resolution;
     // grid (fixed by aspect ratio)
-    float grid = 30.;
+    float grid = 3.;
     float aspect = u_resolution.x / u_resolution.y;
     st *= vec2(aspect, 1.) * grid;
     st = fract(st);
