@@ -1,4 +1,12 @@
 ###########################
+*.tsv
+*.csv
+
+###########################
+## openFrameworks IGNORE ##
+###########################
+
+###########################
 # ignore generated binaries
 # but not the data folder
 ###########################
@@ -25,6 +33,8 @@
 # IDE files which should
 # be ignored
 ########################
+
+*/.vs
 
 # == XCode
 *.pbxuser

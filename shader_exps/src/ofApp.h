@@ -1,7 +1,9 @@
 #pragma once
 
 #include "ofMain.h"
-
+// #include "ofxCurlNoise.h"
+// #include "ofxReactionDiffusion.h"
+// #include "ofxSandLine.h"
 
 class ofApp : public ofBaseApp{
 	public:
@@ -21,8 +23,12 @@ class ofApp : public ofBaseApp{
 		void dragEvent(ofDragInfo dragInfo);
 		void gotMessage(ofMessage msg);
 
-		ofShader shader[8];
-		int shaderInd;
-		ofTexture nowTex;
-		ofFbo fbo;
+		ofShader maskShader, baseShader, fxShader;
+		ofTexture vidTex;
+		ofFbo fbo, fxFbo;
+
+		ofVideoGrabber vidGrab;
+		float camWidth, camHeight;
+
+		bool select;
 };
